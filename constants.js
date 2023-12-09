@@ -1,6 +1,6 @@
 // constants.js
 
-export const contractAddress = "0xEB690936F5AA041D0E333bf5dA9c7C261198A16b"
+export const contractAddress = "0xEB690936F5AA041D0E333bf5dA9c7C261198A16b" // Change it to ur contract address
 export const abi = [
     {
         inputs: [
