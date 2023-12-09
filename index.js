@@ -5,11 +5,15 @@ const connectButton = document.getElementById("connectButton")
 const fundButton = document.getElementById("fundButton")
 const withdrawButton = document.getElementById("withdrawButton")
 const balanceButton = document.getElementById("balanceButton")
+const ContractAddressButton = document.getElementById("ContractAddressButton")
+// 獲取合約地址Element
+const contractAddressElement = document.getElementById("contractAddressElement")
 
 connectButton.onclick = connect
 fundButton.onclick = fund
 withdrawButton.onclick = withdraw
 balanceButton.onclick = getBalance
+ContractAddressButton.onclick = getContractAddress
 
 async function connect() {
     if (typeof window.ethereum !== "undefined") {
@@ -70,13 +74,20 @@ async function getBalance() {
             // 將數值顯示在 HTML 中
             const balanceElement = document.getElementById("balanceElement")
             balanceElement.innerHTML = ethers.utils.formatEther(balance)
-
             console.log(ethers.utils.formatEther(balance))
         } catch (error) {
             console.log(error)
         }
     } else {
         balanceButton.innerHTML = "Please install MetaMask"
+    }
+}
+
+async function getContractAddress() {
+    if (typeof window.ethereum !== "undefined") {
+        contractAddressElement.innerHTML = `Contract Address: ${contractAddress}`
+    } else {
+        ContractAddressButton.innerHTML = "Please install MetaMask"
     }
 }
 

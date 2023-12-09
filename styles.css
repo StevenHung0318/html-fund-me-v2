@@ -2,6 +2,7 @@ body,
 html {
     margin: 0;
     height: 100%;
+    font-family: "Roboto", sans-serif;
 }
 .bg-image {
     background-image: url(bg1.png);
@@ -37,6 +38,7 @@ img {
 }
 h1 {
     color: white;
+    font-size: 40px;
 }
 p {
     color: white;
@@ -45,12 +47,49 @@ p {
     height: 60px;
     width: 150px;
     font-size: 20px;
-    vertical-align: bottom;
-    /* color: black; */
-    /* background-color: white; */
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: rgba(52, 152, 219, 0.7); /* Blue color with 0.7 alpha (70% opacity) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+.buttonsize-address {
+    height: 60px;
+    width: 250px;
+    font-size: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: rgba(52, 152, 219, 0.7); /* Blue color with 0.7 alpha (70% opacity) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+.buttonsize:hover {
+    background-color: rgba(41, 128, 185, 0.7); /* Darker blue color on hover with 0.7 alpha */
+}
+
+.balance {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.form {
+    font-size: 18px;
 }
 
 .meme {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
 }

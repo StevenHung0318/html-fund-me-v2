@@ -1,6 +1,6 @@
 // constants.js
 
-export const contractAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+export const contractAddress = "0xEB690936F5AA041D0E333bf5dA9c7C261198A16b"
 export const abi = [
     {
         inputs: [
